@@ -41,16 +41,17 @@
 
   /* ---------- Top bar ---------- */
   .topbar{
-    background:var(--charcoal);
-    color:var(--slate-light);
+    background:var(--concrete-2);
+    color:var(--slate);
     font-size:12.5px;
     font-family:'JetBrains Mono',monospace;
+    border-bottom:1px solid var(--concrete-2);
   }
   .topbar .wrap{
     display:flex; justify-content:space-between; align-items:center;
     padding-top:8px; padding-bottom:8px; flex-wrap:wrap; gap:6px;
   }
-  .topbar span{color:var(--amber);}
+  .topbar span{color:var(--amber-dim);}
 
   /* ---------- Header ---------- */
   header{
@@ -109,8 +110,8 @@
 
   /* ---------- Hero ---------- */
   .hero{
-    background:var(--charcoal);
-    color:var(--concrete);
+    background:var(--concrete-2);
+    color:var(--charcoal);
     position:relative;
     overflow:hidden;
     padding-top:72px;
@@ -127,32 +128,32 @@
   .eyebrow::before{content:'';width:22px;height:2px;background:var(--amber);}
   .hero h1{
     font-size:clamp(38px,5.2vw,64px);
-    color:var(--concrete);
+    color:var(--charcoal);
     font-weight:800;
     margin-bottom:22px;
   }
-  .hero h1 em{font-style:normal; color:var(--amber);}
+  .hero h1 em{font-style:normal; color:var(--amber-dim);}
   .hero p.lead{
-    font-size:17px; color:var(--slate-light); max-width:480px; margin-bottom:32px;
+    font-size:17px; color:var(--slate); max-width:480px; margin-bottom:32px;
   }
   .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:40px;}
   .hero-stats{
-    display:flex; gap:0; border-top:1px solid rgba(255,255,255,0.12);
+    display:flex; gap:0; border-top:1px solid rgba(24,31,38,0.12);
     padding-top:22px;
   }
   .hero-stats div{flex:1; padding-right:20px;}
   .hero-stats .num{
-    font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:30px; color:var(--amber);
+    font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:30px; color:var(--amber-dim);
   }
   .hero-stats .label{
-    font-size:12px; color:var(--slate-light); text-transform:uppercase; letter-spacing:0.06em; margin-top:2px;
+    font-size:12px; color:var(--slate); text-transform:uppercase; letter-spacing:0.06em; margin-top:2px;
   }
   .hero-art{position:relative; height:100%; min-height:360px; display:flex; align-items:center;}
 
   /* hero photo frame */
   .hero-photo-frame{
     position:relative; width:100%;
-    border:1px solid rgba(255,255,255,0.14);
+    border:1px solid var(--concrete-2);
     padding:10px;
     animation:framein .7s ease forwards;
     opacity:0; transform:translateY(14px);
@@ -187,7 +188,7 @@
 
   /* ---------- Shop photo banner ---------- */
   .shop-photo{
-    position:relative; height:340px; overflow:hidden; background:var(--charcoal);
+    position:relative; height:340px; overflow:hidden; background:var(--concrete-2);
   }
   .shop-photo img{
     width:100%; height:100%; object-fit:cover; object-position:center 35%;
@@ -250,18 +251,18 @@
   }
 
   /* ---------- Why us ---------- */
-  .why{background:var(--charcoal-2); color:var(--concrete);}
-  .why .section-head h2{color:var(--concrete);}
-  .why .section-head p{color:var(--slate-light);}
-  .why .section-head .tag{color:var(--amber);}
-  .why-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(255,255,255,0.08);}
-  .why-card{background:var(--charcoal-2); padding:30px 26px;}
+  .why{background:var(--concrete-2); color:var(--charcoal);}
+  .why .section-head h2{color:var(--charcoal);}
+  .why .section-head p{color:var(--slate);}
+  .why .section-head .tag{color:var(--amber-dim);}
+  .why-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--concrete-2);}
+  .why-card{background:#fff; padding:30px 26px;}
   .why-card .num{
-    font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:15px; color:var(--amber);
+    font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:15px; color:var(--amber-dim);
     margin-bottom:16px; letter-spacing:0.05em;
   }
-  .why-card h4{color:var(--concrete); font-size:18px; margin-bottom:8px;}
-  .why-card p{font-size:13.5px; color:var(--slate-light);}
+  .why-card h4{color:var(--charcoal); font-size:18px; margin-bottom:8px;}
+  .why-card p{font-size:13.5px; color:var(--slate);}
 
   /* ---------- Products ---------- */
   .prod-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
@@ -325,18 +326,18 @@
   .form-note{font-size:12px; color:var(--slate-light); margin-top:10px; text-align:center;}
 
   /* ---------- Footer ---------- */
-  footer{background:var(--charcoal); color:var(--slate-light); padding-top:64px;}
-  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.1);}
-  footer h5{font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.1em; color:var(--concrete); text-transform:uppercase; margin-bottom:16px;}
+  footer{background:var(--concrete-2); color:var(--slate); padding-top:64px; border-top:1px solid var(--concrete-2);}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(24,31,38,0.1);}
+  footer h5{font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.1em; color:var(--charcoal); text-transform:uppercase; margin-bottom:16px;}
   footer ul{list-style:none; display:flex; flex-direction:column; gap:10px;}
-  footer a{font-size:13.5px; color:var(--slate-light); transition:color .15s ease;}
-  footer a:hover{color:var(--amber);}
-  .footer-brand p{font-size:13.5px; max-width:280px; margin-top:14px; color:var(--slate-light);}
+  footer a{font-size:13.5px; color:var(--slate); transition:color .15s ease;}
+  footer a:hover{color:var(--amber-dim);}
+  .footer-brand p{font-size:13.5px; max-width:280px; margin-top:14px; color:var(--slate);}
   .footer-bottom{
-    display:flex; justify-content:space-between; padding:20px 0 28px; font-size:12px; color:var(--slate-light);
+    display:flex; justify-content:space-between; padding:20px 0 28px; font-size:12px; color:var(--slate);
     flex-wrap:wrap; gap:10px;
   }
-  .footer-bottom .mono{color:var(--slate-light);}
+  .footer-bottom .mono{color:var(--slate);}
 
   /* ---------- Responsive ---------- */
   @media(max-width:980px){
